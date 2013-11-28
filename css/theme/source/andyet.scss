@@ -1,0 +1,69 @@
+/**
+ * &yet theme for reveal.js.
+ *
+ * Based on beige theme
+ * Copyright (C) 2011-2012 Hakim El Hattab, http://hakim.se
+ */
+
+
+// Default mixins and settings -----------------
+@import "../template/mixins";
+@import "../template/settings";
+// ---------------------------------------------
+
+// Include theme-specific fonts
+@font-face {
+    font-family: Gotham;
+    src: url("../../lib/font/GothamCond-Bold.otf") format("opentype");
+}
+
+$medGray: #828C8F;
+$darkGray: #272B2D;
+$white: #fff;
+$blue: #12ACEF;
+$pink: #EC008C;
+
+// Primary/body text
+$mainFont: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+$mainFontSize: 36px;
+$mainColor: $darkGray;
+
+// Headings
+$headingMargin: 0 0 20px 0;
+$headingFont: 'Gotham', sans-serif;
+$headingColor: $blue;
+$headingLineHeight: 0.9em;
+$headingLetterSpacing: 0.02em;
+$headingTextTransform: uppercase;
+$headingTextShadow: -1px -1px 1px $darkGray;
+$heading1TextShadow: $headingTextShadow;
+
+// Links and actions
+$linkColor: $pink;
+$linkColorHover: darken($pink, 10%);
+
+// Text selection
+$selectionBackgroundColor: $pink;
+$selectionColor: $white;
+
+// Background generator
+@mixin bodyBackground() {
+    @include radial-gradient($medGray, $white);
+}
+
+// Theme template ------------------------------
+@import "../template/theme";
+// ---------------------------------------------
+
+.reveal section img[src^="/images/logos"] {
+    border: none;
+    background: none;
+    box-shadow: none;
+    margin: 15px;
+    height: 200px;
+    -webkit-transition: none;
+       -moz-transition: none;
+        -ms-transition: none;
+         -o-transition: none;
+            transition: none;
+}
