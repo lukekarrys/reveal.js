@@ -1,7 +1,7 @@
 # Reveal.js
 ## <span>&amp;</span>yet Style
 
-![&yet](/images/logos/andyet.svg)
+![&yet](images/logos/andyet.svg)
 
 Luke Karrys
 
@@ -84,7 +84,7 @@ Some text. *Italic.* **Bold.**
 
 ## Slide with an image
 
-![img](/images/andbang.png)
+![img](images/andbang.png)
 
 
 

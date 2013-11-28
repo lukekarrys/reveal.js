@@ -154,7 +154,7 @@ p strong, p em, p span, h1 strong, h1 em, h1 span, h2 strong, h2 em, h2 span, h3
   border: none;
   box-shadow: 0 0 10px #4d5659; }
 
-.reveal section img[src^="/images/logos"] {
+.reveal section img[src^="images/logos"] {
   background: none;
   box-shadow: none;
   margin: 15px;

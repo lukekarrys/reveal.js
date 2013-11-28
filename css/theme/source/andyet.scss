@@ -79,7 +79,7 @@ p, h1, h2, h3, h4, h5, h6, li {
     box-shadow: 0 0 10px $mainColor;
 }
 
-.reveal section img[src^="/images/logos"] {
+.reveal section img[src^="images/logos"] {
     background: none;
     box-shadow: none;
     margin: 15px;
