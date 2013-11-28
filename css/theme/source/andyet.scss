@@ -17,11 +17,15 @@
     src: url("../../lib/font/GothamCond-Bold.otf") format("opentype");
 }
 
+$lightGray: #E6EAED;
 $medGray: #828C8F;
-$darkGray: #272B2D;
+$darkGray: #4d5659;
 $white: #fff;
 $blue: #12ACEF;
 $pink: #EC008C;
+
+$backgroundColor: $white;
+$backgroundColor2: $medGray;
 
 // Primary/body text
 $mainFont: 'Helvetica Neue', Helvetica, Arial, sans-serif;
@@ -46,24 +50,66 @@ $linkColorHover: darken($pink, 10%);
 $selectionBackgroundColor: $pink;
 $selectionColor: $white;
 
-// Background generator
-@mixin bodyBackground() {
-    @include radial-gradient($medGray, $white);
+// Radial background
+// Disable paralax if you want to use this
+/*@mixin bodyBackground() {
+    @include radial-gradient($backgroundColor2, $backgroundColor);
+}*/
+
+.backgrounds {
+    background-repeat: repeat-x;
 }
 
 // Theme template ------------------------------
 @import "../template/theme";
 // ---------------------------------------------
 
-.reveal section img[src^="/images/logos"] {
+p, h1, h2, h3, h4, h5, h6, li {
+    strong, em, span {
+        color: $pink;
+    }
+}
+
+.reveal h1.big {
+    font-size: 5em;
+}
+
+.reveal section img {
     border: none;
+    box-shadow: 0 0 10px $mainColor;
+}
+
+.reveal section img[src^="/images/logos"] {
     background: none;
     box-shadow: none;
     margin: 15px;
     height: 200px;
-    -webkit-transition: none;
-       -moz-transition: none;
-        -ms-transition: none;
-         -o-transition: none;
-            transition: none;
+}
+
+.reveal blockquote {
+    background: $lightGray;
+    border-left: $medGray 5px solid;
+    font-style: normal;
+    padding: 5px 3%;
+    width: 64%;
+    text-align: left;
+
+    small {
+        margin-top: 9px;
+        color: #828C8F;
+        &:before {
+            content: '\2014 \00A0';
+        }
+    }
+
+    p:last-child {
+        margin-bottom: 0;
+    }
+}
+
+
+// A state to hide all contolrs
+// Works well for the last slide
+.hide-all-controls {
+    .progress, .controls {display: none !important;}
 }

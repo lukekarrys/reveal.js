@@ -4,11 +4,10 @@
     <head>
         <meta charset="utf-8">
 
-        <title>&amp;yet and CAA: Client Solution from Dev to Production | NodeSummit 2013</title>
+        <title>Reveal.js &amp;yet</title>
 
-        <meta name="description" content="&amp;yet and CAA: Client Solution from Dev to Production | NodeSummit 2013">
-        <meta name="author" content="Luke Karrys">
-        <meta name="author" content="Glenn Scott">
+        <meta name="description" content="Reveal.js &amp;yet">
+        <meta name="author" content="| &amp;yet">
 
         <meta name="apple-mobile-web-app-capable" content="yes" />
         <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
@@ -53,6 +52,13 @@
                 progress: true,
                 history: true,
                 center: true,
+
+                // Cloud background to parallax
+                // 1895 works well for ~10 slides
+                // 3790 works well for ~20 slides
+                // Create other sizes if you want more/less parallaxing
+                parallaxBackgroundImage: "/images/clouds-1895.png",
+                parallaxBackgroundSize: '1895px 160px',
 
                 theme: Reveal.getQueryHash().theme, // available themes are in /css/theme
                 transition: Reveal.getQueryHash().transition || 'linear', // default/cube/page/concave/zoom/linear/fade/none

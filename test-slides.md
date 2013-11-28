@@ -1,8 +1,9 @@
-# A huge title!!!
+# Reveal.js
+## <span>&amp;</span>yet Style
 
 ![&yet](/images/logos/andyet.svg)
 
-Author
+Luke Karrys
 
 
 
@@ -10,12 +11,14 @@ Author
 
 
 
-## JS is cool
+## Notes Slide
 
 This slide has some notes. Hit s.
 
 Notes:
-Glenn, I was thinking you could open about why the project initially went in this direction especially but I thought it would work well for you to start the talk and frame the why of it all
+- Note 1
+- Note 2
+- Notes and notes and notes.
 
 
 
@@ -23,9 +26,9 @@ Glenn, I was thinking you could open about why the project initially went in thi
 
 
 
-## Some JS
+## **JS** is cool
 
-```
+```javascript
 // comment
 var x = 100,
     y = ['a', 100, {}],
@@ -41,3 +44,74 @@ var x = 100,
     };
 })(jQuery, window)
 ```
+
+
+
+---
+
+
+
+## Slide Heading
+### Sub Heading
+
+Some text. *Italic.* **Bold.**
+
+
+
+---
+
+
+
+# Big **Title** Slide {.class="big"}
+
+
+
+---
+
+
+
+## Bulleted Fragment List
+
+- This is a <span>thing</span> {.class="fragment"}
+- This is <span>thing</span> thing {.class="fragment"}
+- Thing <span>3</span> {.class="fragment"}
+
+
+
+---
+
+
+
+## Slide with an image
+
+![img](/images/andbang.png)
+
+
+
+---
+
+
+
+## More slides
+
+> This is a blockqoute!  
+> Line 2  
+> <small>Luke?</small>
+
+
+
+---
+
+
+
+<!-- slide-attributes: data-background="#000" data-state="hide-all-controls"  -->
+# The End <span class="fragment">?</span>
+
+
+
+---
+
+
+
+<!-- slide-attributes: data-background="#000" data-state="hide-all-controls" -->
+# &nbsp;
