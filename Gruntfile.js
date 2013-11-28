@@ -15,7 +15,6 @@ module.exports = function(grunt) {
 				' */'
 		},
 
-		// Tests will be added soon
 		qunit: {
 			files: [ 'test/*.html' ]
 		},
@@ -62,7 +61,8 @@ module.exports = function(grunt) {
 				globals: {
 					head: false,
 					module: false,
-					console: false
+					console: false,
+					unescape: false
 				}
 			},
 			files: [ 'Gruntfile.js', 'js/reveal.js' ]
