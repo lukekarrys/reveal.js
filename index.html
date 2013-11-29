@@ -35,7 +35,7 @@
         <div class="reveal">
 
             <div class="slides">
-                <section data-markdown="test-slides.md" data-separator="^\n\n\n---\n\n\n$" data-vertical="^\n--\n$"data-notes="^Notes:"></section>
+                <section data-markdown="test-slides.md" data-separator="^\n\n\n---\n\n\n$" data-vertical="^\n\n\n--\n\n\n$"data-notes="^Notes:"></section>
             </div>
 
         </div>
@@ -53,12 +53,10 @@
                 history: true,
                 center: true,
 
-                // Cloud background to parallax
-                // 1895 works well for ~10 slides
-                // 3790 works well for ~20 slides
-                // Create other sizes if you want more/less parallaxing
-                parallaxBackgroundImage: "images/clouds-1895.png",
+                parallaxBackgroundImage: "images/clouds.png",
                 parallaxBackgroundSize: '1895px 160px',
+                parallaxBackgroundHorizontal: 150,
+                parallaxBackgroundVertical: 30,
 
                 theme: Reveal.getQueryHash().theme, // available themes are in /css/theme
                 transition: Reveal.getQueryHash().transition || 'linear', // default/cube/page/concave/zoom/linear/fade/none
