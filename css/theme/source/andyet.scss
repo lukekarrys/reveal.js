@@ -29,7 +29,7 @@ $backgroundColor2: $medGray;
 
 // Primary/body text
 $mainFont: 'Helvetica Neue', Helvetica, Arial, sans-serif;
-$mainFontSize: 36px;
+$mainFontSize: 48px;
 $mainColor: $darkGray;
 
 // Headings
@@ -43,8 +43,8 @@ $headingTextShadow: -1px -1px 1px $darkGray;
 $heading1TextShadow: $headingTextShadow;
 
 // Links and actions
-$linkColor: $pink;
-$linkColorHover: darken($pink, 10%);
+$linkColor: $blue;
+$linkColorHover: darken($blue, 10%);
 
 // Text selection
 $selectionBackgroundColor: $pink;
@@ -70,8 +70,12 @@ p, h1, h2, h3, h4, h5, h6, li {
     }
 }
 
-.reveal h1.big {
-    font-size: 5em;
+.reveal {
+    h1, h2, h3 {
+        &.big {
+            font-size: 5em;
+        }
+    }
 }
 
 .reveal section img {
@@ -83,7 +87,7 @@ p, h1, h2, h3, h4, h5, h6, li {
     background: none;
     box-shadow: none;
     margin: 15px;
-    height: 200px;
+    height: 100px;
 }
 
 .reveal blockquote {
