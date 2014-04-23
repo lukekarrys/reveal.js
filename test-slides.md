@@ -78,7 +78,7 @@ Some text. *Italic.* **Bold.**
 
 
 
-# Big **Title** Slide {.class="big"}
+<h1 class="big">Big **Title** Slide</h1>
 
 
 
@@ -88,9 +88,11 @@ Some text. *Italic.* **Bold.**
 
 ## Bulleted Fragment List
 
-- This is a <span>thing</span> {.class="fragment"}
-- This is <span>thing</span> thing {.class="fragment"}
-- Thing <span>3</span> {.class="fragment"}
+<ul>
+    <li class="fragment">This is a <span>thing</span></li>
+    <li class="fragment">This is <span>thing</span> thing</li>
+    <li class="fragment">Thing <span>3</span></li>
+</ul>
 
 
 
@@ -120,7 +122,7 @@ Some text. *Italic.* **Bold.**
 
 
 
-<!-- slide-attributes: data-background="#000" data-state="hide-all-controls"  -->
+<!-- .slide: data-background="#000" data-state="hide-all-controls"  -->
 # The End <span class="fragment">?</span>
 
 
@@ -129,5 +131,5 @@ Some text. *Italic.* **Bold.**
 
 
 
-<!-- slide-attributes: data-background="#000" data-state="hide-all-controls" -->
+<!-- .slide: data-background="#000" data-state="hide-all-controls" -->
 # &nbsp;
