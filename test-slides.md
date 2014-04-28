@@ -102,21 +102,11 @@ Some text. *Italic.* **Bold.**
 
 ## Simultaneous Fragments
 
-<span data-fragment-count data-fragment-index="1" class="fragment fade-in">
-    <span data-fragment-index="2" class="fragment fade-out">One</span>
-</span>
-<span data-fragment-count data-fragment-index="2" class="fragment fade-in">
-    <span data-fragment-index="3" class="fragment fade-out">at</span>
-</span>
-<span data-fragment-count data-fragment-index="3" class="fragment fade-in">
-    <span data-fragment-index="4" class="fragment fade-out">a</span>
-</span>
-<span data-fragment-count data-fragment-index="4" class="fragment fade-in">
-    <span data-fragment-count data-fragment-index="5" class="fragment fade-out">time</span>
-</span>
 
-Notes:
-- The data-fragment-count is needed so that notes work with simultaneous fragments
+<span data-fragment-index="1" class="fragment current-visible">One</span>
+<span data-fragment-index="2" class="fragment current-visible">at</span>
+<span data-fragment-index="3" class="fragment current-visible">a</span>
+<span data-fragment-index="4" class="fragment current-visible">time</span>
 
 
 
